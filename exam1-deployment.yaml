@@ -1,0 +1,24 @@
+--- 
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  labels: 
+    app: project
+  name: exam1-deployment
+spec: 
+  ports: ~
+  replicas: 3
+  selector: 
+    matchLabels: 
+      app: project
+  template: 
+    metadata: 
+      labels: 
+        app: project
+    spec: 
+      containers: 
+        - 
+      image: "igidiogu/exam1:v1"
+          name: pages
+
+
